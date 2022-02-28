@@ -23,7 +23,7 @@ The goal of this project is to create a simple [Spring Boot](https://docs.spring
 - [`jq`](https://stedolan.github.io/jq)
 
 ## Start Environment
-
+- https://velaninfo.com/rs/techtips/docker-certificate-authority/
 - Open a terminal and inside `springboot-keycloak-openldap` root folder run
   ```
   docker-compose up -d
