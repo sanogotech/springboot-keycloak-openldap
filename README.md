@@ -8,6 +8,8 @@ The goal of this project is to create a simple [Spring Boot](https://docs.spring
 
 ## Install
 - Install git
+- sudo apt-get install gnupg2
+- sudo apt-get install gnupg
 - https://phoenixnap.com/kb/add-apt-repository-command-not-found-ubuntu
 - https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-debian-10
 ## Application
