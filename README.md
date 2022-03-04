@@ -6,7 +6,7 @@ The goal of this project is to create a simple [Spring Boot](https://docs.spring
 
 > **Note 2:** In [`docker-swarm-environment`](https://github.com/ivangfr/docker-swarm-environment) repository, it's shown how to deploy this project into a cluster of Docker Engines in swarm mode. Besides, we will be running a Keycloak cluster with more than one instance.
 
-## Install
+## Install Docker on Debian 10
 ```
 - sudo apt update
 - sudo apt install apt-transport-https ca-certificates curl gnupg2 software-properties-common
