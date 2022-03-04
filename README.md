@@ -7,9 +7,19 @@ The goal of this project is to create a simple [Spring Boot](https://docs.spring
 > **Note 2:** In [`docker-swarm-environment`](https://github.com/ivangfr/docker-swarm-environment) repository, it's shown how to deploy this project into a cluster of Docker Engines in swarm mode. Besides, we will be running a Keycloak cluster with more than one instance.
 
 ## Install
+```
+- sudo apt update
 - Install git
+- sudo apt install apt-transport-https ca-certificates curl gnupg2 software-properties-common
 - sudo apt-get install gnupg2
 - sudo apt-get install gnupg
+- sudo apt install software-properties-common
+- sudo apt update
+- sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debian $(lsb_release -cs) stable"
+- sudo apt update
+- sudo apt-get install -y docker.io
+```
+- https://stackoverflow.com/questions/61401626/docker-installation-failed-on-ubuntu-20-04-ltsvmware
 - https://phoenixnap.com/kb/add-apt-repository-command-not-found-ubuntu
 - https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-debian-10
 ## Application
