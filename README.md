@@ -31,6 +31,7 @@ The goal of this project is to create a simple [Spring Boot](https://docs.spring
 - https://phoenixnap.com/kb/add-apt-repository-command-not-found-ubuntu
 - https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-debian-10
 - https://linuxize.com/post/how-to-install-and-use-docker-compose-on-debian-10/
+- https://dmc.datical.com/administer/configure-keycloak-ldap.htm
 
 ## Application
 
