@@ -9,7 +9,6 @@ The goal of this project is to create a simple [Spring Boot](https://docs.spring
 ## Install
 ```
 - sudo apt update
-- Install git
 - sudo apt install apt-transport-https ca-certificates curl gnupg2 software-properties-common
 - sudo apt-get install gnupg2
 - sudo apt-get install gnupg
@@ -19,6 +18,7 @@ The goal of this project is to create a simple [Spring Boot](https://docs.spring
 - sudo apt update
 - sudo apt-get update
 - sudo apt-get install -y docker.io
+- docker -v
 ```
 - https://stackoverflow.com/questions/61401626/docker-installation-failed-on-ubuntu-20-04-ltsvmware
 - https://phoenixnap.com/kb/add-apt-repository-command-not-found-ubuntu
