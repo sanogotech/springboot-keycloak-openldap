@@ -25,6 +25,8 @@ The goal of this project is to create a simple [Spring Boot](https://docs.spring
 - https://stackoverflow.com/questions/61401626/docker-installation-failed-on-ubuntu-20-04-ltsvmware
 - https://phoenixnap.com/kb/add-apt-repository-command-not-found-ubuntu
 - https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-debian-10
+- https://linuxize.com/post/how-to-install-and-use-docker-compose-on-debian-10/
+
 ## Application
 
 - ### simple-service
