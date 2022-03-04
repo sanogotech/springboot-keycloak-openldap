@@ -21,10 +21,11 @@ The goal of this project is to create a simple [Spring Boot](https://docs.spring
 - docker -v
 - sudo apt install default-jdk   
 - java -version
-- sudo curl -L "https://github.com/docker/compose/releases/download/1.23.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+- sudo curl -L "https://github.com/docker/compose/releases/download/1.28.5/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 - sudo chmod +x /usr/local/bin/docker-compose
 - docker-compose --version
 - sudo apt-get install jq
+- sudo  docker-compose up -d
 ```
 - https://stackoverflow.com/questions/61401626/docker-installation-failed-on-ubuntu-20-04-ltsvmware
 - https://phoenixnap.com/kb/add-apt-repository-command-not-found-ubuntu
