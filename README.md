@@ -60,6 +60,19 @@ The goal of this project is to create a simple [Spring Boot](https://docs.spring
   ```
   docker-compose ps
   ```
+    ```
+  # Stop services only
+docker-compose stop
+
+# Stop and remove containers, networks..
+docker-compose down 
+
+# Down and remove volumes
+docker-compose down --volumes 
+
+# Down and remove images
+docker-compose down --rmi <all|local> 
+  ```
 
 ## Import OpenLDAP Users
 
