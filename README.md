@@ -17,6 +17,7 @@ The goal of this project is to create a simple [Spring Boot](https://docs.spring
 - sudo apt update
 - sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debian $(lsb_release -cs) stable"
 - sudo apt update
+- sudo apt-get update
 - sudo apt-get install -y docker.io
 ```
 - https://stackoverflow.com/questions/61401626/docker-installation-failed-on-ubuntu-20-04-ltsvmware
