@@ -20,7 +20,7 @@ The goal of this project is to create a simple [Spring Boot](https://docs.spring
 - sudo apt-get install -y docker.io
 - docker -v
 - sudo apt install default-jdk   
-
+- java -version
 ```
 - https://stackoverflow.com/questions/61401626/docker-installation-failed-on-ubuntu-20-04-ltsvmware
 - https://phoenixnap.com/kb/add-apt-repository-command-not-found-ubuntu
