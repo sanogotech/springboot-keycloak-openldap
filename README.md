@@ -60,8 +60,8 @@ The goal of this project is to create a simple [Spring Boot](https://docs.spring
   ```
   docker-compose ps
   ```
-    ```
-  # Stop services only
+  ```
+# Stop services only
 docker-compose stop
 
 # Stop and remove containers, networks..
