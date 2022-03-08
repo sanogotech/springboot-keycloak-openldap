@@ -100,6 +100,9 @@ In a terminal and inside `springboot-keycloak-openldap` root folder run
 - Login with the credentials
   ```
   Login DN: cn=admin,dc=mycompany,dc=com
+    ```
+    
+      ```
   Password: admin
   ```
 
