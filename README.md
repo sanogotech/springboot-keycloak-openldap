@@ -99,8 +99,9 @@ In a terminal and inside `springboot-keycloak-openldap` root folder run
 
 - Login with the credentials
   ```
-  Login DN: cn=admin,dc=mycompany,dc=com
-  Password: admin
+  - Login DN:  cn=admin,dc=mycompany,dc=com
+ 
+  - Password:   admin
   ```
 
 - Import the file `springboot-keycloak-openldap/ldap/ldap-mycompany-com.ldif`
