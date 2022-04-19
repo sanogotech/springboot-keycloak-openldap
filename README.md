@@ -26,6 +26,7 @@ The goal of this project is to create a simple [Spring Boot](https://docs.spring
 - docker-compose --version
 - sudo apt-get install jq
 - sudo  docker-compose up -d
+- Install Maven :  sudo apt install maven
 ```
 - https://stackoverflow.com/questions/61401626/docker-installation-failed-on-ubuntu-20-04-ltsvmware
 - https://phoenixnap.com/kb/add-apt-repository-command-not-found-ubuntu
