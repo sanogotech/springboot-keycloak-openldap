@@ -33,6 +33,7 @@ The goal of this project is to create a simple [Spring Boot](https://docs.spring
 - https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-debian-10
 - https://linuxize.com/post/how-to-install-and-use-docker-compose-on-debian-10/
 - https://dmc.datical.com/administer/configure-keycloak-ldap.htm
+- https://dzone.com/articles/secure-spring-boot-application-with-keycloak
 
 ## Application
 
