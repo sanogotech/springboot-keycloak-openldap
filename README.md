@@ -196,6 +196,8 @@ There are two ways: running a script or using `Keycloak` website
 - Start the application by running the following command
   ```
   ./mvnw clean spring-boot:run --projects simple-service -Dspring-boot.run.jvmArguments="-Dserver.port=9080"
+  
+  - mvn clean spring-boot:run --projects simple-service -Dspring-boot.run.jvmArguments="-Dserver.port=9080 -DKEYCLOAK_HOST=10.10.140.79"
   ```
 
 ## Test using curl
