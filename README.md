@@ -75,7 +75,48 @@ docker-compose down --volumes
 # Down and remove images
 docker-compose down --rmi <all|local> 
   ```
+# Keycloack LDAP Param
+```
+Other
+------
+ldap
+Priority 
+0
+Import Users 
+ONOFF
+* Edit Mode 
 
+READ_ONLY
+Sync Registrations 
+ONOFF
+* Vendor 
+Other
+* Username LDAP attribute 
+uid
+* RDN LDAP attribute 
+uid
+* UUID LDAP attribute 
+entryUUID
+* User Object Classes 
+inetOrgPerson, organizationalPerson
+* Connection URL 
+ldap://openldap
+* Users DN 
+ou=users,dc=mycompany,dc=com
+Custom User LDAP Filter 
+(gidnumber=500)
+Search Scope 
+
+One Level
+* Bind Type 
+
+simple
+* Bind DN 
+cn=admin,dc=mycompany,dc=com
+* Bind Credential 
+**********
+ Advanced Settings
+ ```
 ## Import OpenLDAP Users
 
 The `LDIF` file that we will use, `springboot-keycloak-openldap/ldap/ldap-mycompany-com.ldif`, contains a pre-defined structure for `mycompany.com`. Basically, it has 2 groups (`developers` and `admin`) and 4 users (`Bill Gates`, `Steve Jobs`, `Mark Cuban` and `Ivan Franchin`). Besides, it's defined that `Bill Gates`, `Steve Jobs` and `Mark Cuban` belong to `developers` group and `Ivan Franchin` belongs to `admin` group.
