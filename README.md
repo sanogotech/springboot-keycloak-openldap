@@ -175,7 +175,7 @@ adding new entry "cn=Mark Cuban,ou=users,dc=mycompany,dc=com"
 adding new entry "cn=Steve Jobs,ou=users,dc=mycompany,dc=com"
 ```
 
-### Using phpldapadmin website
+## Using phpldapadmin website
 
 - Access https://localhost:6443
 
