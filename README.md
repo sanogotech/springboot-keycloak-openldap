@@ -134,6 +134,22 @@ There are two ways to import those users: running a script or using `phpldapadmi
 In a terminal and inside `springboot-keycloak-openldap` root folder run
 ```
 ./import-openldap-users.sh
+
+adding new entry "ou=groups,dc=mycompany,dc=com"
+
+adding new entry "cn=admin,ou=groups,dc=mycompany,dc=com"
+
+adding new entry "cn=developers,ou=groups,dc=mycompany,dc=com"
+
+adding new entry "ou=users,dc=mycompany,dc=com"
+
+adding new entry "cn=Bill Gates,ou=users,dc=mycompany,dc=com"
+
+adding new entry "cn=Ivan Franchin,ou=users,dc=mycompany,dc=com"
+
+adding new entry "cn=Mark Cuban,ou=users,dc=mycompany,dc=com"
+
+adding new entry "cn=Steve Jobs,ou=users,dc=mycompany,dc=com"
 ```
 
 ### Using phpldapadmin website
