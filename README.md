@@ -129,6 +129,29 @@ Ivan Franchin > username: ifranchin, password: 123
 
 There are two ways to import those users: running a script or using `phpldapadmin` website
 
+##  Install  ldapadd
+
+- https://command-not-found.com/ldapadd
+
+ Debian
+apt-get install ldap-utils
+ Ubuntu
+apt-get install ldap-utils
+ Alpine
+apk add openldap
+ Arch Linux
+pacman -S openldap
+ Kali Linux
+apt-get install ldap-utils
+ CentOS
+yum install openldap-clients
+ Fedora
+dnf install openldap-clients
+ OS X
+brew install openldap
+ Raspbian
+apt-get install ldap-utils
+
 ### Running a script
 
 In a terminal and inside `springboot-keycloak-openldap` root folder run
