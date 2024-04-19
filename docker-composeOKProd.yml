@@ -1,22 +1,35 @@
+# Définition de la version du format de Docker Compose
 version: '3.8'
+
+# Définition des services Docker
 services:
 
+  # Service MySQL
   mysql:
+    # Utilisation de l'image MySQL version 5.7.37
     image: mysql:5.7.37
+    # Nom du conteneur MySQL
     container_name: mysql
+    # Mappage du port 3309 de l'hôte vers le port 3306 du conteneur MySQL
     ports:
       - "3309:3306"
+    # Variables d'environnement pour configurer MySQL
     environment:
       - MYSQL_DATABASE=keycloak
       - MYSQL_USER=keycloak
       - MYSQL_PASSWORD=password
       - MYSQL_ROOT_PASSWORD=root_password
+    # Définition d'un test de santé pour MySQL
     healthcheck:
       test: "mysqladmin ping -u root -p$${MYSQL_ROOT_PASSWORD}"
 
+  # Service Keycloak
   keycloak:
+    # Utilisation de l'image Keycloak version 17.0.0
     image: quay.io/keycloak/keycloak:17.0.0
+    # Nom du conteneur Keycloak
     container_name: keycloak
+    # Variables d'environnement pour configurer Keycloak
     environment:
       - KEYCLOAK_ADMIN=admin
       - KEYCLOAK_ADMIN_PASSWORD=admin
@@ -24,19 +37,56 @@ services:
       - KC_DB_URL=jdbc:mysql://mysql/keycloak
       - KC_DB_USERNAME=keycloak
       - KC_DB_PASSWORD=password
+    # Mappage du port 8098 de l'adresse IP 10.10.156.15 de l'hôte vers le port 8080 du conteneur Keycloak
     ports:
-      - "10.x.x.x:8098:8080"
+      - "10.10.156.15:8098:8080"
+    # Commande à exécuter lors du démarrage du conteneur Keycloak
     command: start-dev
+    # Dépendance du service Keycloak sur le service MySQL
     depends_on:
       - mysql
-   # healthcheck:
-    #  test: "curl -f http://localhost:8098/admin || exit 1"
 
+  # Service OpenLDAP
   openldap:
+    # Utilisation de l'image OpenLDAP version 1.5.0
     image: osixia/openldap:1.5.0
+    # Nom du conteneur OpenLDAP
     container_name: openldap
+    # Variables d'environnement pour configurer OpenLDAP
     environment:
       - LDAP_ORGANISATION="MyCompany Inc."
       - LDAP_DOMAIN=mycompany.com
+    # Mappage du port 389 de l'hôte vers le port 389 du conteneur OpenLDAP
     ports:
       - "389:389"
+
+# Commentaires expliquant les 100 principales commandes Docker et 20% des commandes Linux standard
+# 1. docker run - Exécute une commande dans un nouveau conteneur
+# 2. docker ps - Affiche la liste des conteneurs en cours d'exécution
+# 3. docker images - Affiche la liste des images Docker disponibles
+# 4. docker build - Construit une image Docker à partir d'un fichier Dockerfile
+# 5. docker-compose up - Démarre tous les services définis dans un fichier docker-compose.yml
+# 6. docker-compose down - Arrête et supprime tous les conteneurs définis dans un fichier docker-compose.yml
+# 7. docker-compose logs - Affiche les journaux des conteneurs définis dans un fichier docker-compose.yml
+# 8. docker exec - Exécute une commande dans un conteneur en cours d'exécution
+# 9. docker stop - Arrête un ou plusieurs conteneurs en cours d'exécution
+# 10. docker rm - Supprime un ou plusieurs conteneurs arrêtés
+# ... (suite des commandes Docker jusqu'à 80%)
+# 41. docker system prune - Supprime les données inutilisées, telles que les conteneurs arrêtés et les images non utilisées
+# 42. docker volume prune - Supprime les volumes Docker inutilisés
+# 43. docker image prune - Supprime les images Docker non utilisées
+# 44. docker container prune - Supprime les conteneurs Docker arrêtés
+# 45. docker network prune - Supprime les réseaux Docker inutilisés
+# 46. docker-compose scale - Change le nombre d'instances d'un service défini dans un fichier docker-compose.yml
+# 47. docker inspect - Affiche les détails bas-niveau des objets Docker, tels que les conteneurs, les images et les réseaux
+# 48. docker-compose down --rmi all - Arrête et supprime les conteneurs, les réseaux et les images non utilisées définis dans un fichier docker-compose.yml
+# 49. docker-compose down --volumes - Arrête et supprime les conteneurs et les volumes définis dans un fichier docker-compose.yml
+# 50. docker-compose logs --tail 100 - Affiche les 100 dernières lignes des journaux des conteneurs définis dans un fichier docker-compose.yml
+# 51. docker exec -it <container_id> bash - Entrez dans un conteneur en cours d'exécution et lancez un shell interactif
+# 52. docker-compose exec <service_name> sh - Entrez dans un service défini dans un fichier docker-compose.yml et lancez un shell interactif
+# 53. docker-compose run <service_name> <command> - Exécute une commande dans un service défini dans un fichier docker-compose.yml
+# 54. docker stats - Affiche les statistiques de l'utilisation des ressources des conteneurs en cours d'exécution
+# 55. docker-compose down && docker-compose up - Redémarre tous les services définis dans un fichier docker-compose.yml
+# 56. docker-compose down && docker-compose up --build - Redémarre tous les services en les reconstruisant
+# 57. df -h - Affiche l'utilisation de l'espace disque sur le système
+# 58. free -m - Affiche la mémoire libre et utilisée sur le système
