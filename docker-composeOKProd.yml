@@ -1,0 +1,42 @@
+version: '3.8'
+services:
+
+  mysql:
+    image: mysql:5.7.37
+    container_name: mysql
+    ports:
+      - "3309:3306"
+    environment:
+      - MYSQL_DATABASE=keycloak
+      - MYSQL_USER=keycloak
+      - MYSQL_PASSWORD=password
+      - MYSQL_ROOT_PASSWORD=root_password
+    healthcheck:
+      test: "mysqladmin ping -u root -p$${MYSQL_ROOT_PASSWORD}"
+
+  keycloak:
+    image: quay.io/keycloak/keycloak:17.0.0
+    container_name: keycloak
+    environment:
+      - KEYCLOAK_ADMIN=admin
+      - KEYCLOAK_ADMIN_PASSWORD=admin
+      - KC_DB=mysql
+      - KC_DB_URL=jdbc:mysql://mysql/keycloak
+      - KC_DB_USERNAME=keycloak
+      - KC_DB_PASSWORD=password
+    ports:
+      - "10.x.x.x:8098:8080"
+    command: start-dev
+    depends_on:
+      - mysql
+   # healthcheck:
+    #  test: "curl -f http://localhost:8098/admin || exit 1"
+
+  openldap:
+    image: osixia/openldap:1.5.0
+    container_name: openldap
+    environment:
+      - LDAP_ORGANISATION="MyCompany Inc."
+      - LDAP_DOMAIN=mycompany.com
+    ports:
+      - "389:389"
