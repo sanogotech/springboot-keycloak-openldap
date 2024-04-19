@@ -90,3 +90,68 @@ services:
 # 56. docker-compose down && docker-compose up --build - Redémarre tous les services en les reconstruisant
 # 57. df -h - Affiche l'utilisation de l'espace disque sur le système
 # 58. free -m - Affiche la mémoire libre et utilisée sur le système
+
+# ... (suite des commandes Docker)
+# 11. docker-compose restart - Redémarre tous les services définis dans un fichier docker-compose.yml
+# 12. docker-compose stop - Arrête tous les services définis dans un fichier docker-compose.yml
+# 13. docker-compose start - Démarre tous les services arrêtés définis dans un fichier docker-compose.yml
+# 14. docker-compose pause - Met en pause tous les services définis dans un fichier docker-compose.yml
+# 15. docker-compose unpause - Reprend tous les services en pause définis dans un fichier docker-compose.yml
+# 16. docker-compose build - Construit tous les services définis dans un fichier docker-compose.yml
+# 17. docker-compose pull - Tire les images Docker des services définis dans un fichier docker-compose.yml
+# 18. docker-compose logs --tail <number> - Affiche les dernières lignes des journaux des conteneurs définis dans un fichier docker-compose.yml
+# 19. docker-compose logs -f - Affiche en temps réel les journaux des conteneurs définis dans un fichier docker-compose.yml
+# 20. docker-compose top - Affiche les processus des conteneurs définis dans un fichier docker-compose.yml
+# 21. docker-compose ps - Affiche l'état des services définis dans un fichier docker-compose.yml
+# 22. docker-compose exec <service_name> <command> - Exécute une commande dans un service défini dans un fichier docker-compose.yml
+# 23. docker-compose run <service_name> <command> - Exécute une commande dans un service défini dans un fichier docker-compose.yml
+# 24. docker-compose scale <service_name>=<number> - Change le nombre d'instances d'un service défini dans un fichier docker-compose.yml
+# 25. docker-compose logs --tail 100 - Affiche les 100 dernières lignes des journaux des conteneurs définis dans un fichier docker-compose.yml
+# 26. docker-compose down -v - Arrête et supprime les conteneurs et les volumes définis dans un fichier docker-compose.yml
+# 27. docker-compose up -d - Démarre tous les services en arrière-plan définis dans un fichier docker-compose.yml
+# 28. docker-compose kill - Arrête brutalement les services définis dans un fichier docker-compose.yml
+# 29. docker-compose exec <service_name> /bin/sh - Exécute un shell dans un service défini dans un fichier docker-compose.yml
+# 30. docker-compose restart <service_name> - Redémarre un service spécifique défini dans un fichier docker-compose.yml
+# 31. docker-compose down --remove-orphans - Arrête et supprime les conteneurs orphelins définis dans un fichier docker-compose.yml
+# 32. docker-compose up --force-recreate - Recrée les conteneurs, même si leur configuration n'a pas changé
+# 33. docker-compose config - Vérifie la syntaxe et affiche la configuration d'un fichier docker-compose.yml
+# 34. docker-compose events - Affiche des événements en temps réel pour les conteneurs définis dans un fichier docker-compose.yml
+# 35. docker-compose push - Pousse les images vers un registre, tel que Docker Hub, pour les services définis dans un fichier docker-compose.yml
+# 36. docker-compose down --rmi all - Supprime les images utilisées par les services définis dans un fichier docker-compose.yml
+# 37. docker-compose down --volumes --remove-orphans - Supprime les volumes et les conteneurs orphelins définis dans un fichier docker-compose.yml
+# 38. docker-compose exec -T <service_name> <command> - Exécute une commande sans TTY dans un service défini dans un fichier docker-compose.yml
+# 39. docker-compose pull <service_name> - Tire une image spécifique pour un service défini dans un fichier docker-compose.yml
+# 40. docker-compose down && docker-compose up - Recrée et démarre tous les services définis dans un fichier docker-compose.yml
+
+# Commentaires expliquant quelques commandes Linux standard
+# 41. df -h - Affiche l'utilisation de l'espace disque sur le système
+# 42. free -m - Affiche la mémoire libre et utilisée sur le système
+# 43. top - Affiche les processus en cours d'exécution avec des informations détaillées
+# 44. ps -aux - Affiche tous les processus en cours d'exécution sur le système
+# 45. ls -l - Affiche le contenu d'un répertoire sous forme détaillée
+# 46. cat <file> - Affiche le contenu d'un fichier
+# 47. grep <pattern> <file> - Recherche un motif dans un fichier
+# 48. systemctl status <service_name> - Affiche l'état d'un service systemd
+# 49. journalctl -xe - Affiche les journaux du système
+# 50. ping <host> - Envoie des paquets ICMP à un hôte pour tester la connectivité réseau
+# ... (suite des commandes Linux)
+# 81. sudo apt update - Met à jour la liste des paquets disponibles
+# 82. sudo apt upgrade - Met à jour tous les paquets installés sur le système
+# 83. sudo apt install <package> - Installe un paquet sur le système
+# 84. sudo apt remove <package> - Supprime un paquet du système
+# 85. sudo apt autoremove - Supprime les paquets inutilisés du système
+# 86. sudo systemctl restart <service_name> - Redémarre un service systemd
+# 87. sudo systemctl start <service_name> - Démarre un service systemd
+# 88. sudo systemctl stop <service_name> - Arrête un service systemd
+# 89. sudo systemctl enable <service_name> - Active un service systemd pour qu'il démarre au démarrage du système
+# 90. sudo systemctl disable <service_name> - Désactive un service systemd pour qu'il ne démarre pas au démarrage du système
+# 91. sudo journalctl -u <service_name> - Affiche les journaux d'un service systemd
+# 92. sudo chmod <permissions> <file_or_directory> - Modifie les permissions d'un fichier ou d'un répertoire
+# 93. sudo chown <user>:<group> <file_or_directory> - Change le propriétaire et le groupe d'un fichier ou d'un répertoire
+# 94. sudo useradd <username> - Ajoute un nouvel utilisateur
+# 95. sudo userdel <username> - Supprime un utilisateur
+# 96. sudo passwd <username> - Change le mot de passe d'un utilisateur
+# 97. sudo adduser <username> <group> - Ajoute un utilisateur à un groupe
+# 98. sudo deluser <username> <group> - Supprime un utilisateur d'un groupe
+# 99. sudo systemctl reload <service_name> - Recharge la configuration d'un service systemd sans redémarrer
+# 100. sudo systemctl status <service_name> - Affiche l'état d'un service systemd
